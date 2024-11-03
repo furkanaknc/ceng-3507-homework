@@ -1,0 +1,292 @@
+/* In my css code I've always used flex because it makes easier the responsiveness  */
+/* I've used flex-direction: column in the body to make the footer always at the bottom of the page */
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* I've  give the default values of header section in here*/
+/* flex direction is row because elements of footer need to share a row */
+/* flex:2 for size of footer in general page */
+header {
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  padding: 10px;
+  background-color: #63e6be;
+  color: white;
+  flex: 2;
+}
+
+/* I've  give the default values of footer in here*/
+/* flex direction is row because elements of footer need to share a row
+otherwise footer will be bigger and bigger */
+/* flex:0.05 for size of footer in general page */
+footer {
+  display: flex;
+  flex: 0.05;
+  flex-direction: row;
+  margin: 10px 0;
+  padding: 5px;
+  background-color: #63e6be;
+  color: white;
+}
+
+/* I've deleted underline of "a" tag in here */
+a{
+  text-decoration: none;
+}
+
+/* Main section container */
+/* Flex layout with padding for consistent spacing around the content */
+main {
+  display: flex;
+  flex: 5;
+  padding: 10px;
+}
+
+/* Middle section of main content */
+/* Flex layout arranged in a column for stacking items vertically */
+/* Background color and box-shadow for separation from the background */
+#main-mid {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Left and right side sections of main content */
+/* Arranged in a column for vertical stacking of elements */
+/* Uniform padding, background color, and box-shadow for a cohesive design */
+#main-left, #main-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card table layout */
+/* Row layout with centered alignment and gap between elements for better spacing */
+#card-table {
+  flex: 2;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Top bar elements alignment */
+/* Row layout with gap for spacing, aligns items vertically in the center */
+.top-bar-element {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+}
+
+
+/* Centered alignment for header elements, sharing equal space */
+.bank-name, .head-slogan, .head-text {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+/* Margin for header icons to create spacing between text and icon */
+.head-icon {
+  margin: 0 10px;
+}
+
+/* User information container */
+/* Column layout for stacking items vertically, with border and background color for emphasis */
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: #333 solid 1px;
+  border-radius: 15px;
+  background-color: aliceblue;
+}
+
+/* Money information section */
+/* Center alignment in a column layout for organized appearance */
+.money-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Transaction info list styling */
+/* Removes default list styling, aligns items at the start and centers text */
+.transaction-info ul {
+  width: 100%;
+  list-style-type: none;
+  justify-content: start;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* Transaction list items styling */
+/* Row layout with spacing between items for clear readability */
+.transaction-info ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+/* Currency information container */
+/* Column layout with gap, border, and background color for emphasis */
+.currency-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: #333 solid 1px;
+  border-radius: 15px;
+  background-color: aliceblue;
+}
+
+/* IBAN section */
+/* Centers text and items vertically within a column layout */
+.iban {
+  text-align: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* IBAN information container */
+/* Row layout with gap for separation between items */
+.iban-info {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+/* Style for card details, giving a consistent border and layout */
+/* Aligns items to center for a uniform look, and provides some spacing */
+.cards {
+  border: 2px solid #63e6be;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Styling for buttons inside the mid section */
+/* Button has padding for better clickability, a background color */
+/* Transition effect for smoother color change on hover */
+.mid-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #63e6be;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Changes background color on hover for better user feedback */
+.mid-button a:hover {
+  background-color: #52c9a3;
+}
+
+/* General info styling, aligns content to center */
+/* Uses gap for spacing between child elements */
+.general-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Footer section with flex properties for alignment */
+/* Uses gap for spacing and centers content */
+.footer-info {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Social media links section */
+/* Distributes space evenly between icons for a clean look */
+.socials {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Adjusts layout for general and job info sections */
+/* Ensures equal space usage in flex container */
+.general-info, .job-info {
+  flex: 1;
+}
+
+/* Media query for responsiveness on small screens (up to 768px) */
+/* Adjusts header layout for smaller screens, aligning items centrally */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Stacks main content sections vertically for better mobile readability */
+  main {
+    flex-direction: column;
+  }
+
+  /* Adjusts footer layout for smaller screens, with more space between elements */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+  }
+
+  /* Ensures left, middle, and right sections stack on top of each other */
+  /* Provides some margin at the bottom for visual separation */
+  #main-left, #main-mid, #main-right {
+    flex: none;
+    margin-bottom: 10px;
+  }
+
+  /* Stacks cards vertically for better viewing on smaller screens */
+  #card-table {
+    flex-direction: column;
+  }
+
+}

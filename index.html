@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/98898d9f3b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <!-- left side of header including: bank name -->
+    <!-- I've used icon from fav-icon web site  -->
+    <div class="top-bar-element bank-name">
+      <div class="head-icon"> <i class="fa-solid fa-piggy-bank fa-2xl" style="color: #4f52ec"></i></div>
+      <h1>Akinci Bank</h1>
+    </div>
+    <!-- middle side of header including: user name-->
+    <div class="top-bar-element head-slogan">
+      <h3>Hello Teoman !</h3>
+    </div>
+    <!-- right side of header including: slogan -->
+    <div class="top-bar-element head-text">
+      <p><em>Your money is more valuable with us</em></p>
+    </div>
+  </header>
+
+  <main>
+    <!-- left side of main section, including: information about profile -->
+    <div id="main-left">
+      <div class="user-info profile-info">
+        <div class="icon"><i class="fa-solid fa-user fa-lg"></i></div>
+        <p>Teoman Zengin</p>
+      </div>
+      <!-- In here I have use p for type money in bank account  -->
+      <!-- I've used icon from fav-icon web site  -->
+      <div class="user-info money-info">
+        <div class="icon"><i class="fa-solid fa-wallet fa-lg"></i></i></div>
+        <p>1000$</p>
+      </div>
+      <!-- In here I've listed transactions with un-ordered list -->
+      <div class="user-info transaction-info">
+          <!-- I've used icon from fav-icon web site  -->
+        <div class="icon"><i class="fa-solid fa-exchange fa-lg"></i></div>
+        <div class="transaction-list">
+          <p>Transactions:</p>
+          <ul>
+            <li>withdraw: <span>100$</span></li>
+            <li>withdraw: <span>100$</span></li>
+            <li>deposit: <span>20$</span></li>
+            <li>deposit: <span>40$</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- middle side of main section, including: IBAN and cards  -->
+    <div id="main-mid">
+      <div class=" iban">
+        <h3>IBAN</h3>
+        <div class="iban-info">
+          <p>
+            TR12 1111 1111 1111 6111 8111 11
+          </p>
+          <!-- I've used icon from fav-icon web site, it looks like copy icon  -->
+          <div class="icon">
+            <i class="fa-solid fa-copy fa-lg"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Information about credit cards of bank -->
+      <!-- I've used "p" for text, "h3" for header of information and "a" for fake link -->
+      <div id="card-table">
+        <div class="cards">
+          <div class="card-1">
+            <h3> Bronze Credit Card</h3>
+            <hr>
+            <p>
+              You can shop in installments and earn bonuses.
+              Apply for your bonus credit card now.
+            </p>
+            <div class="mid-button">
+              <a href="#">Take It</a>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card-2">
+            <h3>Gold Credit Card</h3>
+            <hr>
+            <p>
+              Enjoy exclusive rewards and higher credit limits.
+              Apply for your Gold Credit Card today!
+            </p>
+            <div class="mid-button">
+              <a href="#">Take It</a>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card-3">
+            <h3>Platen Credit Card</h3>
+            <hr>
+            <p>
+              Experience premium privileges and VIP services.
+              Get your Platinum Credit Card now!
+            </p>
+            <div class="mid-button">
+              <a href="#">Take It</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- right side of main section, including: currency information  -->
+    <div id="main-right">
+      <div class="currency-info dollar-info">
+        <div class="icon"><i class="fa-solid fa-dollar-sign fa-lg"></i> </div>
+        <p>34,29₺</p>
+      </div>
+      <div class="currency-info euro-info">
+        <div class="icon"><i class="fa-solid fa-euro-sign fa-lg"></i> </div>
+        <p>37,02₺</p>
+      </div>
+      <div class="currency-info ruble-info">
+        <div class="icon"><i class="fa-solid fa-ruble-sign fa-lg"></i></div>
+        <p>0,35₺</p>
+      </div>
+      <div class="currency-info gold-info">
+        <div class="icon"><i class="fa-solid fa-coins fa-lg" style="color: #d7b747"></i></div>
+        <p>2.748,13$</p>
+      </div>
+      <div class="currency-info silver-info">
+        <div class="icon">
+          <i class="fa-solid fa-coins fa-lg" style="color: #ccced1"></i>
+        </div>
+        <p>1.156,62₺</p>
+      </div>
+      <div class="currency-info bitcoin-info">
+        <div class="icon">
+          <i class="fa-solid fa-bitcoin-sign fa-lg" style="color: #f2a900"></i>
+        </div>
+        <p>2.312.182,86₺</p>
+      </div>
+    </div>
+  
+  </main>
+  
+  <!-- footer of page including: social media links, company information links and site information links -->
+  <footer>
+    <div class="footer-info general-info">
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">FAQ</a>
+        <a href="#">Services</a>
+    </div>
+    <div class="footer-info socials">
+      <div class=" social-info icon instagram">
+        <!-- I've used fav-icon's icons in here and used them inside a div -->
+        <!-- I've used div because of css styling. Icons without div makes that job harder -->
+        <a href="#"><i class="fa-brands fa-square-instagram fa-lg"></i></a>
+      </div>
+      <div class=" social-info icon facebook">
+        <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+      </div>
+      <div class=" social-info icon twitter">
+        <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+      </div>
+      <div class=" social-info icon linkedin">
+        <a href="#"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+
+      </div>
+    </div>
+    <div class="footer-info job-info">
+      <a href="#">Career</a>
+      <a href="#">Life at Akinci Bank</a>
+      <a href="#">Contact</a>
+    </div>
+  </footer>
+</body>
+
+</html>
