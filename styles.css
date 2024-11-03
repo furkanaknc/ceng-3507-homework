@@ -40,7 +40,7 @@ footer {
 }
 
 /* I've deleted underline of "a" tag in here */
-a{
+a {
   text-decoration: none;
 }
 
@@ -50,6 +50,13 @@ main {
   display: flex;
   flex: 5;
   padding: 10px;
+}
+
+header h1 {
+  font-family: "Lavishly Yours", cursive;
+}
+header h3 {
+  font-family: "Coustard", serif;
 }
 
 /* Middle section of main content */
@@ -69,7 +76,8 @@ main {
 /* Left and right side sections of main content */
 /* Arranged in a column for vertical stacking of elements */
 /* Uniform padding, background color, and box-shadow for a cohesive design */
-#main-left, #main-right {
+#main-left,
+#main-right {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -92,6 +100,9 @@ main {
   gap: 10px;
 }
 
+/* ------------------------ header----------------------------------------- */
+
+
 /* Top bar elements alignment */
 /* Row layout with gap for spacing, aligns items vertically in the center */
 .top-bar-element {
@@ -102,9 +113,10 @@ main {
   padding: 5px;
 }
 
-
 /* Centered alignment for header elements, sharing equal space */
-.bank-name, .head-slogan, .head-text {
+.bank-name,
+.head-slogan,
+.head-text {
   display: flex;
   justify-content: center;
   flex: 1;
@@ -114,6 +126,12 @@ main {
 .head-icon {
   margin: 0 10px;
 }
+
+/* ------------------------ header----------------------------------------- */
+
+
+/* ------------------left of main----------------------------------------- */
+
 
 /* User information container */
 /* Column layout for stacking items vertically, with border and background color for emphasis */
@@ -126,6 +144,7 @@ main {
   border: #333 solid 1px;
   border-radius: 15px;
   background-color: aliceblue;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Money information section */
@@ -154,7 +173,18 @@ main {
   flex-direction: row;
   justify-content: space-between;
   padding: 5px 0;
+  font-family: "Roboto", sans-serif;
 }
+
+.transaction-info ul li span {
+  font-family: "Coustard", serif;
+}
+
+/* ------------------left of main----------------------------------------- */
+
+
+/* ------------------right of main----------------------------------------- */
+
 
 /* Currency information container */
 /* Column layout with gap, border, and background color for emphasis */
@@ -167,7 +197,13 @@ main {
   border: #333 solid 1px;
   border-radius: 15px;
   background-color: aliceblue;
+  font-family: "Roboto", sans-serif;
 }
+
+/* ------------------right of main----------------------------------------- */
+
+
+/* ------------------middle of main----------------------------------------- */
 
 /* IBAN section */
 /* Centers text and items vertically within a column layout */
@@ -201,13 +237,13 @@ main {
   padding: 20px;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto", sans-serif;
 }
-
 
 /* Styling for buttons inside the mid section */
 /* Button has padding for better clickability, a background color */
 /* Transition effect for smoother color change on hover */
-.mid-button a {
+.card-button a {
   display: inline-block;
   padding: 10px 20px;
   background-color: #63e6be;
@@ -221,6 +257,12 @@ main {
 .mid-button a:hover {
   background-color: #52c9a3;
 }
+
+
+/* ------------------middle of main----------------------------------------- */
+
+
+/* ---------------------------footer----------------------------------------- */
 
 /* General info styling, aligns content to center */
 /* Uses gap for spacing between child elements */
@@ -253,7 +295,8 @@ main {
 
 /* Adjusts layout for general and job info sections */
 /* Ensures equal space usage in flex container */
-.general-info, .job-info {
+.general-info,
+.job-info {
   flex: 1;
 }
 
@@ -274,12 +317,14 @@ main {
   footer {
     flex-direction: column;
     align-items: center;
-    gap: 20px; 
+    gap: 20px;
   }
 
   /* Ensures left, middle, and right sections stack on top of each other */
   /* Provides some margin at the bottom for visual separation */
-  #main-left, #main-mid, #main-right {
+  #main-left,
+  #main-mid,
+  #main-right {
     flex: none;
     margin-bottom: 10px;
   }
@@ -288,5 +333,4 @@ main {
   #card-table {
     flex-direction: column;
   }
-
 }
